@@ -8,6 +8,13 @@ System.out.println("El factorial no esta definido"
 } else {
 long fac = fact(num);
 System.out.println("El factorial de "+num+" es "+fac);
-}
 scanInput.close();
+}
+
+public static long fact(long num) {
+if (num<=1) {
+return 1;
+} else {
+return num*fact(num-1);
+
 }
